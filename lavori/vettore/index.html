@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vettore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="array-container">
+            <input type="number" class="array-dim" placeholder="dim" onfocusout="creaVettore()">
+            <table class="array">
+                <td id="array">
+                </td>
+            </table>
+        </div>
+        <div class="function-container">
+            <div class="button-container">
+                <button onclick=random()>Genera numeri casuali nel vettore</button>
+                <button onclick=decrescente()>Ordinamento dal minore al maggiore</button>
+                <button onclick=crescente()>Ordinamento dal maggiore al minore</button>
+                <button onclick=reverse()>Riordina al contrario</button>
+                <button onclick=minimo()>Numero minimo</button>
+                <button onclick=massimo()>Numero massimo</button>
+            </div>
+            <div class="print-container">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

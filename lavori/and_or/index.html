@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick_function</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-container" id="main-container">
+        <div class="input-container">
+            <input type="text" id="input-n1" class="nome" placeholder="Numero 2">
+            <input type="text" id="input-n2" class="nome" placeholder="Numero 1">
+            <div class="btn-container">
+                <button id="btn" class="btn" onclick="andOperation()">And</button>
+                <button id="btn" class="btn" onclick="orOperation()">Or</button>
+            </div>
+        </div>
+        <div class="print-container">
+            <h3>Stampa:</h3>
+            <h6 id="stampa"></h6>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversione Binaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <h3>Convertitore decimale <i class="fa-solid fa-arrow-right"></i> binario a 8 bit</h3>
+            <button class="submit" onclick="convertToBinary()">Converti</button>
+        </div>
+
+        <table class="table" cellpadding="5">
+            <tbody>
+                <tr>
+                    <td align="right">
+                        <b>Valore decimale</b>
+                        <input type="text" id="input-dec" size=36 value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <b>Valore binario</b>
+                        <input type="text" class="readonly" id="input-bin" size=36 value="0" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>And or binario a 8 bit</h3>
+        <div class="andor-container">
+            <table class="table-input" cellpadding="5">
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <b>Primo numero:</b>
+                        </td>
+                        <td align="center">
+                            <input type="text" id="input-n1" size=8 placeholder= "n decimale 1" onfocusout="convert(this)">
+                        </td>
+                        <td align="right">
+                            <input type="text" class="readonly" id="bin-n1" size=5 value="00000000" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <b>Secondo numero:</b>
+                        </td>
+                        <td align="center">
+                            <input type="text" id="input-n2" size=8 placeholder= "n decimale 2" onfocusout="convert(this)">
+                        </td>
+                        <td align="right">
+                            <input type="text" class="readonly" id="bin-n2" size=5 value="00000000" readonly>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table-andor" cellpadding="5">
+                <tbody>
+                    <tr>
+                        <td align="right">
+                            <button class="andor-button" onclick="and()">AND</button>
+                            <input type="text" class="readonly" id="print-and" size=15 value="00000000" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <button class="andor-button" onclick="or()">OR</button>
+                            <input type="text" class="readonly" id="print-or" size=15 value="00000000" readonly>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
