@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somma da un numero a un altro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="num1">Primo numero:</label>
+        <input type="text" id="num1">
+        <br>
+        <label for="num2">Secondo numero:</label>
+        <input type="text" id="num2">
+        <br>
+        <input type="radio" id="even" name="paridispari" value="Pari" checked>
+        <label for="Pari">Pari</label>
+        <input type="radio" id="Dispari" name="paridispari" value="Dispari">
+        <label for="Dispari">Dispari</label>
+        <br>
+        <button onclick="sommaNumeri()">Somma</button>
+        <p id="ris"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

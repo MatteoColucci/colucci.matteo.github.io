@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagrafica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+    
+      <label for="cognome">Cognome:</label>
+      <input type="text" id="cognome" name="cognome">
+    
+      <div class="sesso">
+        <input type="radio" id="maschio" name="sesso" value="maschio" checked>
+        <label for="maschio">Maschio</label>
+        <input type="radio" id="femmina" name="sesso" value="femmina">
+        <label for="femmina">Femmina</label>
+        <input type="radio" id="altro" name="sesso" value="altro">
+        <label for="femmina">Altro</label>
+      </div>
+      <label for="nazione">Nazione:</label>
+      <select id="nazione" name="nazione">
+        <option value="IT">Italia</option>
+        <option value="US">Stati Uniti</option>
+        <option value="FR">Francia</option>
+      </select>
+      
+      <label for="provincia">Provincia:</label>
+      <select id="provincia" name="provincia">
+        <option value="MI">Milano</option>
+        <option value="RM">Roma</option>
+        <option value="NA">Napoli</option>
+      </select>
+      <label for="citta">Città:</label>
+      <input type="text" id="citta" name="citta">
+      
+      <label for="indirizzo_tipo">Tipo di indirizzo:</label>
+      <select id="indirizzo_tipo" name="indirizzo_tipo">
+          <option value="via">Via</option>
+          <option value="piazza">Piazza</option>
+          <option value="corso">Corso</option>
+        </select>
+        <label for="indirizzo">Indirizzo:</label>
+        <input type="text" id="indirizzo" name="indirizzo">
+        <label for="numero_civico">Numero civico:</label>
+        <input type="number" id="numero_civico" name="numero_civico">
+    
+        <label for="sport_praticati">Sport praticati:</label>
+        <div class="sport_praticati">
+          <input type="checkbox" id="calcio" name="sport_praticati" value="calcio">
+          <label for="calcio">Calcio</label><br>
+          <input type="checkbox" id="Basket" name="sport_praticati" value="Basket">
+          <label for="basket">Basket</label><br>
+          <input type="checkbox" id="Pallanuoto" name="sport_praticati" value="Pallanuoto">
+          <label for="pallanuoto">Pallanuoto</label><br>
+          <input type="checkbox" id="Pallavolo" name="sport_praticati" value="Pallavolo">
+          <label for="pallavolo">Pallavolo</label><br>
+        </div>
+        <div class="submit-reset-buttons">
+            <input type="submit" value="Invia">
+            <input type="reset" value="Resetta">
+        </div>
+        <div id="form-output"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  </body>
+  </html>
