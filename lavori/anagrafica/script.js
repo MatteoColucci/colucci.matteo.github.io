@@ -54,15 +54,4 @@ document.querySelector('form').addEventListener('submit', function(event){
     </tr>
   </table>
   `
-
-  console.log('Nome: ' + nome);
-  console.log('Cognome: ' + cognome);
-  console.log('Sesso: ' + sesso);
-  console.log('Nazione: ' + nazione);
-  console.log('Provincia: ' + provincia);
-  console.log('Città: ' + citta);
-  console.log('Tipo di indirizzo: ' + indirizzo_tipo);
-  console.log('Indirizzo: ' + indirizzo);
-  console.log('Numero Civico: ' + numero_civico);
-  console.log('Sport praticati: ' + sport_praticati);
 });

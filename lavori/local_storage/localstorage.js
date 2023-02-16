@@ -1,0 +1,10 @@
+document.getElementById('email').innerHTML = localStorage.getItem('email');
+document.getElementById('nome').innerHTML = localStorage.getItem('nome');
+document.getElementById('cognome').innerHTML = localStorage.getItem('cognome');
+document.getElementById('sesso').innerHTML = localStorage.getItem('sesso');
+document.getElementById('provincia').innerHTML = localStorage.getItem('provincia');
+document.getElementById('citta').innerHTML = localStorage.getItem('citta');
+document.getElementById('cap').innerHTML = localStorage.getItem('cap');
+document.getElementById('indirizzo').innerHTML = `${localStorage.getItem('indirizzo_tipo')} ${localStorage.getItem('indirizzo')} ${localStorage.getItem('numero_civico')}`;
+let sport_praticati = JSON.parse(localStorage.getItem('sport_praticati'));
+document.getElementById('sport').innerHTML = sport_praticati.join(', ');
