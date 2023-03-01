@@ -10,13 +10,14 @@
 <body>
     <div class="container">
         <h1>Generatore di tabelle dinamiche</h1>
-        <label for="righe">Righe:</label>
-        <input type="number" id="righe">
-        <label for="colonne">Colonne:</label>
-        <input type="number" id="colonne">
-        <button onclick="generaTabella()">Genera Tabella</button>
-        <div id="tableContainer"></div>
-        <script src="script.js"></script>
+        <form onsubmit="generaTabella()">
+            <label for="righe">Righe:</label>
+            <input type="number" id="righe">
+            <label for="colonne">Colonne:</label>
+            <input type="number" id="colonne">
+            <button type="submit">Genera Tabella</button>
+            <script src="script.js"></script>
+        </form>
     </div>
 </body>
 </html>
