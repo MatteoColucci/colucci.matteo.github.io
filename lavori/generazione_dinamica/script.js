@@ -3,8 +3,6 @@ document.querySelector('form').addEventListener('submit', function(event){
     event.preventDefault();
     var righe = document.getElementById('righe').value;
     var colonne = document.getElementById('colonne').value;
-    console.log(righe);
-    console.log(colonne);
     let table = "<table>";
     for (let i = 0; i < righe; i++) {
         table += "<tr>";

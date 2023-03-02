@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espressioni Matematiche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Espressioni Matematiche</h1>
+        <table>
+            <tr>
+                <td align="right">
+                    <label for="coefficiente">Coefficiente angolare:</label>
+                    <input type="number" id="coefficiente" step="0.1">
+                </td>
+                <td>
+                    <button onclick="disegnaRetta()">Disegna retta</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="raggio">Raggio:</label>
+                    <input type="number" id="raggio">
+                </td>
+                <td>
+                    <button onclick="disegnaCirconferenza()">Disegna circonferenza</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="semiasse-orizzontale">S. Oriz.:</label>
+                    <input type="number" id="semiasse-orizzontale">
+                    <label for="semiasse-verticale">S. Ver.:</label>
+                    <input type="number" id="semiasse-verticale">
+                </td>
+                <td>
+                    <button onclick="disegnaEllisse()">Disegna ellisse</button>
+                </td>
+            </tr>
+        </table>
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
