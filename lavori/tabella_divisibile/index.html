@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <label for="row">Righe: <input type="number" id="row"></label>
+            <label for="column">Colonne: <input type="number" id="column"></label>
+            <button onclick="generateTable()">Genera Tabella</button><br>
+        </div>
+        <select id="color-select" onchange="colorTable(this.value)">
+            <option value="">Seleziona un valore</option>
+            <option value="2">Colora i divisibili per 2</option>
+            <option value="3">Colora i divisibili per 3</option>
+            <option value="4">Colora i divisibili per 4</option>
+            <option value="5">Colora i divisibili per 5</option>
+            <option value="6">Colora i divisibili per 6</option>
+            <option value="7">Colora i divisibili per 7</option>
+            <option value="8">Colora i divisibili per 8</option>
+            <option value="9">Colora i divisibili per 9</option>
+            <option value="10">Colora i divisibili per 10</option>
+        </select>
+            <div class="table-container" id="table-container"></div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
