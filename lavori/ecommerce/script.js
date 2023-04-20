@@ -54,7 +54,6 @@ cartButton.addEventListener("click", function() {
 function loadCart() {
     const cartTable = document.getElementById("cart-table");
     let cartItems = JSON.parse(localStorage.getItem("cart"));
-    console.log(cartItems);
     for(let i=0; i<cartItems.length; i++) {
       let product = cartItems[i];
       let row = cartTable.insertRow();
