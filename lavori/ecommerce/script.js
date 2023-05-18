@@ -1,43 +1,35 @@
 const table = document.getElementById("product-table");
-const uploadBoxEl = document.getElementById("product-file-input");
-var reader = new FileReader();
-uploadBoxEl.onchange = ()=> reader.readAsText(uploadBoxEl.files[0]);
-var csv;
-var rows;
-
 let cart = [];
 
-
-// Caricare i prodotti dal file CSV selezionato
-reader.onloadend = function() {
-      csv = reader.result;
-      rows = csv.split(/\n/);
-      for(let i=0; i<rows.length; i++){
-        var cols = rows[i].split(',');
+// Carica i prodotti dal localStorage
+function loadProducts() {
+  const savedProducts = JSON.parse(localStorage.getItem('productList'));
+  if (savedProducts) {
+    savedProducts.forEach(product => {
         let row = table.insertRow();
-        for(let j=1; j<cols.length; j++){
-          row.insertCell().innerText = cols[j] + (j==7 ? "€" : "");
-        }
+        row.insertCell().innerText = product.name;
+        row.insertCell().innerText = product.brand;
+        row.insertCell().innerText = product.color;
+        row.insertCell().innerText = product.ram;
+        row.insertCell().innerText = product.storage + "GB";
+        row.insertCell().innerText = product.releaseYear;
+        row.insertCell().innerText = product.price + "€";
         let addButtonCell = row.insertCell();
-            let addButton = document.createElement('button');
-            addButton.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
-            addButton.addEventListener('click', function() {
-              addToCart(i);
-            });
-            addButtonCell.appendChild(addButton);
-      }
+        let addButton = document.createElement('button');
+        addButton.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
+        addButton.addEventListener('click', function() {
+          addToCart(product);
+        });
+        addButtonCell.appendChild(addButton);
+    });
   }
+}
 
 // funzione "Aggiungi al carrello"
-function addToCart(index) {
-    product = getProductByIndex(index);
+function addToCart(product) {
     cart.push(product);
     updateCartCount();
     localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function getProductByIndex(i){
-    return rows[i].split(',');
 }
 
 function updateCartCount() {
@@ -45,11 +37,6 @@ function updateCartCount() {
     cartButton.innerText = `Carrello (${cart.length})`;
 }
 
-//apertura carrello
-const cartButton = document.getElementById("cart-button");
-cartButton.addEventListener("click", function() {
-  window.location.href = "cart.html";
-});
 
 function loadCart() {
     const cartTable = document.getElementById("cart-table");
@@ -57,8 +44,18 @@ function loadCart() {
     for(let i=0; i<cartItems.length; i++) {
       let product = cartItems[i];
       let row = cartTable.insertRow();
-      for(let j=1; j<product.length; j++) {
-        row.insertCell().innerText = product[j] + (j==7 ? "€" : "");
-      }
+      row.insertCell().innerText = product.name;
+      row.insertCell().innerText = product.brand;
+      row.insertCell().innerText = product.color;
+      row.insertCell().innerText = product.ram;
+      row.insertCell().innerText = product.storage + "GB";
+      row.insertCell().innerText = product.releaseYear;
+      row.insertCell().innerText = product.price + "€";
     }
   }
+
+function clearProducts(){
+  localStorage.removeItem('cart');
+  location.reload();
+}
+

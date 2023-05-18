@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggiungi Prodotti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="crea-prodotto">Crea un nuovo prodotto</h2>
+    <form id="product-form">
+      <label for="product-name">Nome:</label>
+      <input type="text" id="product-name" name="product-name"><br>
+      
+      <label for="product-brand">Marca:</label>
+      <input type="text" id="product-brand" name="product-brand"><br>
+      
+      <label for="product-color">Colore:</label>
+      <input type="text" id="product-color" name="product-color"><br>
+      
+      <label for="product-ram">RAM:</label>
+      <select id="product-ram" name="product-ram">
+      <option value="2GB">2GB</option> <option value="4GB">4GB</option> <option value="8GB">8GB</option> <option value="16GB">16GB</option> </select><br>
+      
+      <label for="product-storage">Memoria:</label>
+      <input type="text" id="product-storage" name="product-storage"><br>
+      
+      <label for="product-release-year">Anno di uscita:</label>
+      <input type="text" id="product-release-year" name="product-release-year"><br>
+      
+      <label for="product-price">Prezzo:</label>
+      <input type="text" id="product-price" name="product-price"><br>
+      
+      <input type="submit" value="Aggiungi prodotto">
+    </form>
+    
+    <a href="index.html">Torna alla lista dei prodotti</a>
+    <br>
+    <br>
+    <button onclick="clearProducts()">Elimina tutti i prodotti</button>
+    
+    <script src="addProducts.js"></script>
+</body>
+</html>

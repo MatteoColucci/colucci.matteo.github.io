@@ -1,32 +1,82 @@
 table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 8px;
-    border: 2px solid black;
-    white-space: nowrap;
-  }
-  
-  th {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  tr:nth-child(even) {background-color: #f2f2f2;}
-  
-  #cart-button {
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    float: right;
-  }
-  
-  #cart-button:hover {
-    background-color: #3e8e41;
-  }
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid black;
+}
+
+tr:nth-child(odd) {
+  background-color: #4CAF50;
+}
+
+#cart-button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  float: right;
+}
+
+#cart-button:hover {
+  background-color: #3e8e41;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+select{
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+span {
+  display: inline-block;
+  font-size: 14px;
+  color: black;
+  background-color: lightgray;
+  font-weight: bold;
+  padding: 5px;
+}
