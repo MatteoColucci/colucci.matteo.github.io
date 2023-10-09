@@ -13,13 +13,15 @@ body{
     align-items: center;
     height: 100%;
     background-color: #434750;
+    overflow-x: auto; /* Abilita l'overflow orizzontale */
+    overflow-y: hidden; /* Nasconde l'overflow verticale */
 }
 
 h1{
     text-align: center;
     color: #fff;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, .3);
-    transform: skewY(-15deg) translateX(-100%) translateY(-50%);
+    transform: translateX(0) translateY(50vh);
 }
 
 ul{
@@ -93,8 +95,8 @@ ul li:last-child::after{
     box-shadow: -100px 100px 20px rgba(0, 0, 0, .3);
 }
 
-.trimestre li:first-child::after{
-    content: 'Trimestre';
+.quarta-trimestre li:first-child::after{
+    content: '4-Trimestre';
     text-align: center;
     font-size: 25px;
     color: #fff;
@@ -103,8 +105,18 @@ ul li:last-child::after{
     transition: 0.5s;
 }
 
-.pentamestre li:first-child::after{
-    content: 'Pentamestre';
+.quarta-pentamestre li:first-child::after{
+    content: '4-Pentamestre';
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.quinta-trimestre li:first-child::after{
+    content: '5-Trimestre';
     text-align: center;
     font-size: 25px;
     color: #fff;
