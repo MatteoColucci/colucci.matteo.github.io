@@ -31,8 +31,10 @@ productForm.addEventListener('submit', (event) => {
     });
 
     localStorage.setItem('productList', JSON.stringify(productList));
+    alert("prodotto aggiunto");
 });
 
 function clearProducts(){
     localStorage.removeItem('productList');
+    alert("prodotti rimossi");
 }
