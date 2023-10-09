@@ -1,6 +1,6 @@
 function creaTabella() {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://matteocolucci.github.io/main/lavori/tabella-csv.csv", true);
+    xhttp.open("GET", "https://matteocolucci.github.io/main/lavori/lettura_file_csv/tabella-csv.csv", true);
     xhttp.send();
 
     xhttp.onreadystatechange = function() {
