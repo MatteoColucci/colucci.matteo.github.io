@@ -1,0 +1,26 @@
+<campionato>
+    <squadra nome="milan">
+        <giocatore>
+            <nome>Rafael</nome>
+            <cognome>Leao</cognome>
+        </giocatore>
+        <giocatore>
+            <nome>Olivier</nome>
+            <cognome>Giroud</cognome>
+        </giocatore>
+        <giocatore>
+            <nome>Fikayo</nome>
+            <cognome>Tomori</cognome>
+        </giocatore>
+    </squadra>
+    <squadra nome="juventus">
+        <giocatore>
+            <nome>Federico</nome>
+            <cognome>Chiesa</cognome>
+        </giocatore>
+        <giocatore>
+            <nome>Adrien</nome>
+            <cognome>Rabiot</cognome>
+        </giocatore>
+    </squadra>
+</campionato>
