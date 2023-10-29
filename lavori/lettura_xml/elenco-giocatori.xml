@@ -23,4 +23,14 @@
             <cognome>Rabiot</cognome>
         </giocatore>
     </squadra>
+    <squadra nome="inter">
+        <giocatore>
+            <nome>Lautaro</nome>
+            <cognome>Martinez</cognome>
+        </giocatore>
+        <giocatore>
+            <nome>Alessandro</nome>
+            <cognome>Bastoni</cognome>
+        </giocatore>
+    </squadra>
 </campionato>
