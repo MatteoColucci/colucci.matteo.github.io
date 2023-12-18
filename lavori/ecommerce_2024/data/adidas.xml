@@ -1,0 +1,72 @@
+<products>
+    <product>
+        <title>Scarpe Stan Smith</title>
+        <size>41 EU</size>
+        <description>Cloud White / Cloud White / Collegiate Navy</description>
+        <price>110</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77eba6f945ea8dabac210127b11e_9366/Scarpe_Stan_Smith_Bianco_FX5501_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Stan Smith</title>
+        <size>41 EU</size>
+        <description>Cloud White / Cloud White / Collegiate Navy</description>
+        <price>110</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77eba6f945ea8dabac210127b11e_9366/Scarpe_Stan_Smith_Bianco_FX5501_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Stan Smith</title>
+        <size>42 EU</size>
+        <description>Cloud White / Cloud White / Collegiate Navy</description>
+        <price>110</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77eba6f945ea8dabac210127b11e_9366/Scarpe_Stan_Smith_Bianco_FX5501_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Stan Smith</title>
+        <size>44 EU</size>
+        <description>Cloud White / Cloud White / Collegiate Navy</description>
+        <price>110</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77eba6f945ea8dabac210127b11e_9366/Scarpe_Stan_Smith_Bianco_FX5501_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Stan Smith</title>
+        <size>49 EU</size>
+        <description>Cloud White / Cloud White / Collegiate Navy</description>
+        <price>110</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77eba6f945ea8dabac210127b11e_9366/Scarpe_Stan_Smith_Bianco_FX5501_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Stan Smith</title>
+        <size>38 EU</size>
+        <description>Cloud White / Cloud White / Collegiate Navy</description>
+        <price>110</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77eba6f945ea8dabac210127b11e_9366/Scarpe_Stan_Smith_Bianco_FX5501_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Stan Smith</title>
+        <size>38 EU</size>
+        <description>Cloud White / Cloud White / Collegiate Navy</description>
+        <price>110</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b47d77eba6f945ea8dabac210127b11e_9366/Scarpe_Stan_Smith_Bianco_FX5501_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Ozweego</title>
+        <size>40 EU</size>
+        <description>Bliss / Bliss / Bliss</description>
+        <price>120</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Scarpe_OZWEEGO_Beige_FX6029_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Ozweego</title>
+        <size>41 EU</size>
+        <description>Bliss / Bliss / Bliss</description>
+        <price>120</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Scarpe_OZWEEGO_Beige_FX6029_01_standard.jpg</img_link>
+    </product>
+    <product>
+        <title>Scarpe Ozweego</title>
+        <size>45 EU</size>
+        <description>Bliss / Bliss / Bliss</description>
+        <price>120</price>
+        <img_link>https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fdd2ed4315b74f6ea506acb600b20504_9366/Scarpe_OZWEEGO_Beige_FX6029_01_standard.jpg</img_link>
+    </product>
+</products>
