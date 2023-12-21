@@ -19,13 +19,17 @@
     <div class="filters">
       <h2>Seleziona la marca:</h2>
       <div class="buttons">
-        <button class="active">Nike</button>
-        <button class="">Adidas</button>
-        <button class="">Puma</button>
+        <button id="nike" class="active" onclick="loadNikeProducts()">
+          Nike
+        </button>
+        <button id="adidas" class="" onclick="loadAdidasProducts()">
+          Adidas
+        </button>
+        <button id="puma" class="" onclick="loadPumaProducts()">Puma</button>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="productContainer">
       <figure class="product">
         <div class="img">
           <img
@@ -43,5 +47,6 @@
         </div>
       </figure>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

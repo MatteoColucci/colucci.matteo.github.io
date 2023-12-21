@@ -73,6 +73,7 @@ header button:hover i {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 75px;
+  row-gap: 30px;
 }
 
 .product {
