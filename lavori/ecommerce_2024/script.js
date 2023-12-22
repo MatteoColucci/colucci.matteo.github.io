@@ -1,3 +1,5 @@
+// CARICAMENTO PRODOTTI
+
 const nike_csv =
   "https://matteocolucci.github.io/main/lavori/ecommerce_2024/data/nike.csv";
 const adidas_xml =
@@ -7,6 +9,8 @@ const puma_json =
 const nikeButton = document.getElementById("nike");
 const adidasButton = document.getElementById("adidas");
 const pumaButton = document.getElementById("puma");
+
+loadNikeProducts();
 
 function loadProducts(url, format) {
   productContainer.innerHTML = "";
@@ -19,7 +23,18 @@ function loadProducts(url, format) {
       let data;
 
       if (format === "xml") {
-        data = this.responseXML;
+        data = Array.from(this.responseXML.getElementsByTagName("product")).map(
+          (product) => {
+            return {
+              title: product.getElementsByTagName("title")[0].textContent,
+              size: product.getElementsByTagName("size")[0].textContent,
+              description:
+                product.getElementsByTagName("description")[0].textContent,
+              price: product.getElementsByTagName("price")[0].textContent,
+              img_link: product.getElementsByTagName("img_link")[0].textContent,
+            };
+          }
+        );
       } else if (format === "json") {
         data = JSON.parse(this.responseText);
       } else if (format === "csv") {
@@ -35,38 +50,17 @@ function loadProducts(url, format) {
           data.push(product);
         }
       }
-      if (data) {
-        const products =
-          format === "xml" ? data.getElementsByTagName("product") : data;
 
-        for (let i = 0; i < products.length; i++) {
-          const title =
-            format === "xml"
-              ? products[i].getElementsByTagName("title")[0].textContent
-              : products[i].title;
-          const size =
-            format === "xml"
-              ? products[i].getElementsByTagName("size")[0].textContent
-              : products[i].size;
-          const description =
-            format === "xml"
-              ? products[i].getElementsByTagName("description")[0].textContent
-              : products[i].description;
-          const price =
-            format === "xml"
-              ? products[i].getElementsByTagName("price")[0].textContent
-              : products[i].price;
-          const imgLink =
-            format === "xml"
-              ? products[i].getElementsByTagName("img_link")[0].textContent
-              : products[i].img_link;
+      if (data) {
+        for (let i = 0; i < data.length; i++) {
+          const { title, size, description, price, img_link } = data[i];
 
           const figure = document.createElement("figure");
           figure.classList.add("product");
 
           figure.innerHTML = `
             <div class="img">
-              <img src="${imgLink}" />
+              <img src="${img_link}" />
             </div>
             <ul class="details">
               <h2 class="title">${title}</h2>
@@ -75,7 +69,10 @@ function loadProducts(url, format) {
             </ul>
             <div class="row">
               <h2 class="price">${price}&euro;</h2>
-              <button>Aggiungi al Carrello</button>
+              <button onclick="addToCart(${JSON.stringify(data[i]).replace(
+                /"/g,
+                "'"
+              )})">Aggiungi al Carrello</button>
             </div>
           `;
 
@@ -106,4 +103,11 @@ function loadPumaProducts() {
   nikeButton.classList.remove("active");
   adidasButton.classList.remove("active");
   loadProducts(puma_json, "json");
+}
+
+function addToCart(product) {
+  var carrello = JSON.parse(localStorage.getItem("carrello")) || [];
+  carrello.push(product);
+  localStorage.setItem("carrello", JSON.stringify(carrello));
+  alert("Aggiunto al carrello");
 }

@@ -23,16 +23,21 @@ header {
   border-bottom: 3px solid #1864ab;
 }
 
-header button {
+header a {
   background: none;
   border: none;
   margin-right: 10px;
   color: #1864ab;
   font-size: 15px;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-header button:hover i {
+header a:hover {
   color: #1971c2;
 }
 
@@ -116,7 +121,7 @@ header button:hover i {
   align-items: center;
 }
 
-.product .row button {
+button {
   margin-right: 2px;
   font-size: 16px;
   padding: 10px 20px;
@@ -130,6 +135,68 @@ header button:hover i {
   letter-spacing: -0.2px;
 }
 
-.product .row button:hover {
+button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CARRELLO */
+
+.back-to-home {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+.summary figure {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.summary figure img {
+  border-radius: 10px;
+  flex: 1;
+}
+
+.summary figure .details {
+  flex: 3;
+  position: relative;
+}
+
+.summary figure .details .title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.summary figure .details {
+  list-style: none;
+}
+
+.summary figure .details .price {
+  position: absolute;
+  font-size: 32px;
+  bottom: 0;
+}
+
+.summary figure button {
+  flex: 1;
+  align-self: flex-end;
+}
+
+.checkout {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
