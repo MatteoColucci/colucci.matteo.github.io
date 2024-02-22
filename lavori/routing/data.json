@@ -1,0 +1,17 @@
+{
+  "red": {
+    "color": "ROSSA",
+    "description": "Questo div si colora di rosso",
+    "background_color": "red"
+  },
+  "green": {
+    "color": "VERDE",
+    "description": "Questo div si colora di verde",
+    "background_color": "green"
+  },
+  "blue": {
+    "color": "AZZURRA",
+    "description": "Questo div si colora di azzurro",
+    "background_color": "lightblue"
+  }
+}

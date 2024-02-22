@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS JSON Routing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px 30px;
+        margin-bottom: 20px;
+      }
+      .buttons p {
+        grid-column: 1 / -1;
+        justify-self: center;
+      }
+      .buttons a {
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      .buttons a:hover {
+        background-color: yellow;
+      }
+      .red:hover {
+        background-color: red !important;
+      }
+      .green:hover {
+        background-color: green !important;
+      }
+      .blue:hover {
+        background-color: lightblue !important;
+      }
+      .page {
+        text-align: center;
+        padding: 20px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <p><a href="#/">Main</a></p>
+      <a class="red" href="#!/page/red">Rosso</a>
+      <a class="green" href="#!/page/green">Verde</a>
+      <a class="blue" href="#!/page/blue">Azzurro</a>
+    </div>
+
+    <div ng-view class="page"></div>
+
+    <script>
+      var app = angular.module("myApp", ["ngRoute"]);
+
+      app.config(function ($routeProvider) {
+        $routeProvider
+          .when("/", {
+            templateUrl: "main.htm",
+            controller: "MainController",
+          })
+          .when("/page/:color", {
+            templateUrl: "page.htm",
+            controller: "PageController",
+          });
+      });
+
+      app.controller("MainController", function ($scope) {
+        // Controller per la pagina principale (main.htm)
+      });
+
+      app.controller("PageController", function ($scope, $http, $routeParams) {
+        var color = $routeParams.color;
+
+        $http.get("data.json").then(function (response) {
+          $scope.data = response.data[color];
+        });
+      });
+    </script>
+  </body>
+</html>
