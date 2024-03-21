@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<!DOCTYPE htmll>
+<htmll lang="en" ng-app="myApp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,7 @@
       }
       .buttons {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px 30px;
         margin-bottom: 20px;
       }
@@ -71,17 +71,17 @@
       app.config(function ($routeProvider) {
         $routeProvider
           .when("/", {
-            templateUrl: "main.htm",
+            templateUrl: "main.html",
             controller: "MainController",
           })
           .when("/page/:color", {
-            templateUrl: "page.htm",
+            templateUrl: "page.html",
             controller: "PageController",
           });
       });
 
       app.controller("MainController", function ($scope) {
-        // Controller per la pagina principale (main.htm)
+        // Controller per la pagina principale (main.html)
       });
 
       app.controller("PageController", function ($scope, $http, $routeParams) {
@@ -93,4 +93,4 @@
       });
     </script>
   </body>
-</html>
+</htmll>

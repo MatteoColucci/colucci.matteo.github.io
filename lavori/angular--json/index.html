@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ricerca parametri</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <div ng-controller="MainController">
+      <input
+        type="text"
+        ng-model="searchText"
+        placeholder="Cerca per nome..."
+        class="search-bar"
+      />
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Città</th>
+              <th>Lavoro</th>
+              <th>Stipendio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="persona in (people | filter:searchText)">
+              <td>{{ persona.nome }}</td>
+              <td>{{ persona.citta }}</td>
+              <td>{{ persona.lavoro }}</td>
+              <td>{{ persona.stipendio }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script>
+    angular
+      .module("myApp", [])
+      .controller("MainController", function ($scope, $http) {
+        $scope.people = [];
+
+        $http.get("data.json").then(function (response) {
+          $scope.people = response.data;
+        });
+      });
+  </script>
+</html>

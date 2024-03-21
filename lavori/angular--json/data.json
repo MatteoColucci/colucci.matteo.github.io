@@ -1,0 +1,188 @@
+[
+  {
+    "nome": "Mario Rossi",
+    "citta": "Roma",
+    "lavoro": "Ingegnere",
+    "stipendio": 50000
+  },
+  {
+    "nome": "Giulia Bianchi",
+    "citta": "Milano",
+    "lavoro": "Avvocato",
+    "stipendio": 60000
+  },
+  {
+    "nome": "Luca Verdi",
+    "citta": "Napoli",
+    "lavoro": "Medico",
+    "stipendio": 70000
+  },
+  {
+    "nome": "Sara Ferrari",
+    "citta": "Torino",
+    "lavoro": "Insegnante",
+    "stipendio": 45000
+  },
+  {
+    "nome": "Gianfri Quarzio",
+    "citta": "Salerno",
+    "lavoro": "Avvocato",
+    "stipendio": 100000
+  },
+  {
+    "nome": "Alessandro Ricci",
+    "citta": "Bologna",
+    "lavoro": "Programmatore",
+    "stipendio": 55000
+  },
+  {
+    "nome": "Martina Gallo",
+    "citta": "Firenze",
+    "lavoro": "Architetto",
+    "stipendio": 62000
+  },
+  {
+    "nome": "Giovanni Moretti",
+    "citta": "Palermo",
+    "lavoro": "Dottore commercialista",
+    "stipendio": 68000
+  },
+  {
+    "nome": "Francesca Conti",
+    "citta": "Genova",
+    "lavoro": "Infermiera",
+    "stipendio": 48000
+  },
+  {
+    "nome": "Paolo Gatti",
+    "citta": "Bari",
+    "lavoro": "Pilota",
+    "stipendio": 75000
+  },
+  {
+    "nome": "Elisa Barbieri",
+    "citta": "Catania",
+    "lavoro": "Psicologo",
+    "stipendio": 51000
+  },
+  {
+    "nome": "Riccardo Lombardi",
+    "citta": "Venice",
+    "lavoro": "Chef",
+    "stipendio": 58000
+  },
+  {
+    "nome": "Laura Marchetti",
+    "citta": "Verona",
+    "lavoro": "Biologo",
+    "stipendio": 59000
+  },
+  {
+    "nome": "Andrea Guerini",
+    "citta": "Padova",
+    "lavoro": "Ingegnere Civile",
+    "stipendio": 62000
+  },
+  {
+    "nome": "Valentina Ferrara",
+    "citta": "Taranto",
+    "lavoro": "Chimico",
+    "stipendio": 60000
+  },
+  {
+    "nome": "Simone Marini",
+    "citta": "Trieste",
+    "lavoro": "Avvocato",
+    "stipendio": 65000
+  },
+  {
+    "nome": "Giorgio Vitali",
+    "citta": "Reggio Calabria",
+    "lavoro": "Insegnante",
+    "stipendio": 48000
+  },
+  {
+    "nome": "Elena Fabbri",
+    "citta": "Modena",
+    "lavoro": "Farmacista",
+    "stipendio": 54000
+  },
+  {
+    "nome": "Davide Santoro",
+    "citta": "Pescara",
+    "lavoro": "Architetto",
+    "stipendio": 62000
+  },
+  {
+    "nome": "Anna Longo",
+    "citta": "Cagliari",
+    "lavoro": "Ingegnere",
+    "stipendio": 55000
+  },
+  {
+    "nome": "Fabio Ferri",
+    "citta": "Messina",
+    "lavoro": "Programmatore",
+    "stipendio": 58000
+  },
+  {
+    "nome": "Alessia Serra",
+    "citta": "Ancona",
+    "lavoro": "Infermiera",
+    "stipendio": 49000
+  },
+  {
+    "nome": "Roberto Piras",
+    "citta": "Bolzano",
+    "lavoro": "Pilota",
+    "stipendio": 72000
+  },
+  {
+    "nome": "Silvia Leoni",
+    "citta": "Trento",
+    "lavoro": "Psicologo",
+    "stipendio": 53000
+  },
+  {
+    "nome": "Marco Rizzo",
+    "citta": "Perugia",
+    "lavoro": "Dottore commercialista",
+    "stipendio": 68000
+  },
+  {
+    "nome": "Chiara Greco",
+    "citta": "Ravenna",
+    "lavoro": "Chimico",
+    "stipendio": 60000
+  },
+  {
+    "nome": "Giacomo Sala",
+    "citta": "Potenza",
+    "lavoro": "Biologo",
+    "stipendio": 59000
+  },
+  {
+    "nome": "Federica Costa",
+    "citta": "Aosta",
+    "lavoro": "Ingegnere Civile",
+    "stipendio": 63000
+  },
+  {
+    "nome": "Lorenzo Caruso",
+    "citta": "Campobasso",
+    "lavoro": "Architetto",
+    "stipendio": 61000
+  },
+  {
+    "nome": "Elisabetta Mancini",
+    "citta": "L'Aquila",
+    "lavoro": "Farmacista",
+    "stipendio": 56000
+  },
+  {
+    "nome": "Gabriele Orlando",
+    "citta": "Sassari",
+    "lavoro": "Insegnante",
+    "stipendio": 49000
+  }
+]
