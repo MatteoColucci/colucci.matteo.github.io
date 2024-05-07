@@ -1,59 +1,57 @@
-body{
-    margin:0;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    font-family: cursive;
-    background-color: lightblue;
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: lightblue;
 }
 
-.main-container{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    width: 550px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    margin: 0 10px;
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 550px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 0 10px;
 }
 
-.input-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 40px;
-    align-items: center;
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 40px;
+  align-items: center;
 }
 
-.input-container input{
-    display: block;
-    padding: 2px;
-    margin: 10px 0;
-    border: solid 2px red;
-    border-radius: 4px;
+.input-container input {
+  display: block;
+  padding: 2px;
+  margin: 10px 0;
+  border: solid 2px red;
+  border-radius: 4px;
 }
 
-.btn{
-    margin: 10px 0;
-    border-radius: 3px;
-    padding: 5px 30%;
-    border: solid 2px orange;
-    background-color: white;
+.btn {
+  margin: 10px 0;
+  border-radius: 3px;
+  padding: 5px 30%;
+  border: solid 2px orange;
+  background-color: white;
 }
 
-.btn:hover{
-    background-color: rgba(255, 0, 0, 0.3);
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.3);
 }
 
-.print-container{
-    padding: 0 30px;
-    border: solid 2px red;
-
+.print-container {
+  padding: 0 30px;
+  border: solid 2px red;
 }
 
-.print-container h3{
-    text-decoration: underline;
+.print-container h3 {
+  text-decoration: underline;
 }

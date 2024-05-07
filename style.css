@@ -11,17 +11,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
   background-color: #434750;
-  overflow-x: auto; /* Abilita l'overflow orizzontale */
-  overflow-y: hidden; /* Nasconde l'overflow verticale */
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 150px;
+  max-width: 1200px;
+  margin-top: auto;
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   color: #fff;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
-  transform: translateX(0) translateY(50vh);
+  margin: auto 0 25px 50px;
+  width: 100%;
 }
 
 ul {
@@ -123,4 +134,35 @@ ul li:last-child::after {
   display: block;
   text-transform: uppercase;
   transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+  }
+
+  h1 {
+    grid-row: -1;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 100px;
+    margin-top: 50px;
+  }
+
+  ul {
+    justify-self: center;
+    margin-left: 70px;
+  }
 }

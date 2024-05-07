@@ -1,86 +1,89 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-family: cursive;
-    background: #5BC0F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #5bc0f8;
 }
-    
-.container{
-    width: 50%;
-    padding: 2rem;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    margin: 2%;
+
+.container {
+  width: 50%;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 2%;
 }
-    
-input[type="text"], input[type="number"], select {
-    display: block;
-    margin: 5px 0;
-    width: 100%;
+
+input[type="text"],
+input[type="number"],
+select {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
 }
-    
-    /* sesso */
-.sesso label{
-    margin-right: 10px;
+
+/* sesso */
+.sesso label {
+  margin-right: 10px;
 }
-    
+
 .sesso {
-    display: inline-flex;
-    align-items: center;
-    width: 100%;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
 }
-    
+
 input[type="radio"] {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
-    
-    /* sport */
-    
+
+/* sport */
+
 .sport_praticati input[type="checkbox"] {
-    appearance: auto;
-    border: initial;
+  appearance: auto;
+  border: initial;
 }
-    
-    /* submit-reset buttons */
+
+/* submit-reset buttons */
 .submit-reset-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-    
-input[type="submit"], input[type="reset"] {
-    width: 40%;
-    padding: 10px;
-    background-color: #5BC0F8;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+
+input[type="submit"],
+input[type="reset"] {
+  width: 40%;
+  padding: 10px;
+  background-color: #5bc0f8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
-    
-input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #3F9AE5;
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #3f9ae5;
 }
 
 table {
-    width: 100%;
-    border-radius: 10px;
-    border: 2px solid black;
-    text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
 }
 
 td:nth-child(1) {
-    width: 50%;
-    background-color: lightblue;
-    border-right: none;
+  width: 50%;
+  background-color: lightblue;
+  border-right: none;
 }
 
 td:nth-child(2) {
-    width: 50%;
-    background-color: lightgray;
-    border-left: none;
+  width: 50%;
+  background-color: lightgray;
+  border-left: none;
 }
